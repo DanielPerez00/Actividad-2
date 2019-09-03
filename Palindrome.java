@@ -1,8 +1,15 @@
+import java.util.Scanner;
+
 public class Palindrome
 {
+  
 
     public static boolean isPalindrome(String word)
     {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Dame una frase o palabra sin espacios");
+        word = sc.nextLine();
+
         boolean is_palindrome = false;
 
         StringBuilder string_builder = new StringBuilder(word);
@@ -19,9 +26,9 @@ public class Palindrome
         String word = "palabra";
 
         if (isPalindrome(word)) {
-            System.out.println(1);
+            System.out.println("Es Palindromo");
         } else {
-            System.out.println(0);
+            System.out.println("No es palindromo");
         }
 
     }
